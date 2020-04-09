@@ -1,10 +1,18 @@
-# Backend for PT11 word-find app
+# The Gremlin Returns  
 
-This currently supports authentication endpoints and a database for users to add their own lists of words.
+Zounds! Gadzooks! Another gremlin has demolished this API. It sent many packages packing, it routed the routers (in the bad, destructive sense), and even deLETED THE DATABASE! Argh!
+
+Our objectives at standup this week:
+1. Restore the database using the migrations (they are still intact)
+2. Reseed the database using the seeds (also provided)
+3. Rebuild the server and routers that work with both db tables (users and wordlists)
+4. Redeploy - Maybe get an introduction to postgres migration.
+
+There is NO TIME to lose sirs, you're the men for the job. Hop to it!
 
 ## Deployment details
 
-Api and postgres db hosted via heroku. API base url: https://wordlist-backend.herokuapp.com/
+The gremlin has destroyed all deployments. Redeploy at your leisure.
 
 ### Endpoint info:
 
@@ -27,7 +35,3 @@ The POST/PUT endpoints at `/wordlists` expect objects with the following format:
     title: "descriptive title for wordlist"
 }
 `
-
-PUT and DELETE operations should be restricted to only the user's own puzzles.
-
-The POST/PUT/DELETE endpoints at `/users` will likely not be used and should be restricted from general users. GET is available for user profiles. 
